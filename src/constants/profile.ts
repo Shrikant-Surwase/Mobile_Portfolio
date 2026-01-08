@@ -2,11 +2,14 @@ export const PROFILE = {
   name: 'Shrikant Survase',
   title: 'React Native Developer • SDE 1 at Greytip Software',
   location: 'Maharashtra, India',
-  timezone: new Date().toLocaleTimeString('en-IN', {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true,
-  }),
+  timezone: new Date()
+    .toLocaleTimeString('en-IN', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true,
+      timeZone: 'Asia/Kolkata',
+    })
+    .toLowerCase(),
   email: 'heysurvase@gmail.com',
   bio: [
     "I'm Shrikant Survase, a React Native Developer currently working as SDE 1 at Greytip Software Pvt. I love building mobile applications that make a difference.",
