@@ -7,6 +7,7 @@ export interface WorkExperienceItem {
     projectName: string;
     projectDescription: string;
   }>;
+  link?: string;
 }
 
 export const WORK_EXPERIENCE: WorkExperienceItem[] = [
@@ -23,6 +24,7 @@ export const WORK_EXPERIENCE: WorkExperienceItem[] = [
           'HRMS platform - A comprehensive human resource management system mobile application.',
       },
     ],
+    link: 'https://www.linkedin.com/in/shrikant-survase-5211531b1/',
   },
   {
     role: 'Freelance Developer',
@@ -37,5 +39,6 @@ export const WORK_EXPERIENCE: WorkExperienceItem[] = [
           'Car booking app - A mobile application for booking and managing car rentals.',
       },
     ],
+    link: 'https://github.com/Shrikant-Surwase/VentDrive2',
   },
 ];

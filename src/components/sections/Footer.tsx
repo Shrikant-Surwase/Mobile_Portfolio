@@ -1,3 +1,4 @@
+import { frijole } from '@/app/fonts';
 import { Container } from '@/components/ui/Layout';
 
 export const Footer = () => {
@@ -5,7 +6,7 @@ export const Footer = () => {
     <footer className="w-full py-5 sm:py-6">
       <Container>
         <div className="text-left mb-6 sm:mb-8 border-dashed border-t border-[#27272a] pt-5 sm:pt-6">
-          <p className="text-base sm:text-lg font-bold font-doto text-[#c766ff] tracking-wider">
+          <p className={`${frijole.className} text-base sm:text-lg font-bold font-doto text-[#c766ff] tracking-wider`}>
             Shrikant Survase
           </p>
         </div>
