@@ -11,7 +11,7 @@ export const Footer = () => {
         </div>
         <div className="text-left font-jetbrains-mono space-y-1.5 sm:space-y-2">
           <p className="text-gray-600 text-[10px] sm:text-xs break-words">
-            That&apos;s all, folks | Designed &amp; built with some caffiene ☕ and headache...
+            That&apos;s all, folks | Develop &amp; built with some caffiene ☕ and headache...
           </p>
           <p className="text-gray-600 text-[10px] sm:text-xs break-words">
             © Shrikant Survase. All rights reserved (even the bugs).
