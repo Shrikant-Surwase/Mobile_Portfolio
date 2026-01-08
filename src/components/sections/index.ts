@@ -1,0 +1,11 @@
+export { Header } from './Header';
+export { Hero } from './Hero';
+export { CTAButtons } from './CTAButtons';
+export { SocialLinks } from './SocialLinks';
+export { Skills } from './Skills';
+export { WorkExperience } from './WorkExperience';
+export { Projects } from './Projects';
+export { Blogs } from './Blogs';
+export { SpotifySection } from './SpotifySection';
+export { InteractiveExperience } from './InteractiveExperience';
+export { Footer } from './Footer';

@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shrikant's Portfolio
+
+This is a modern, fully refactored portfolio built with [Next.js](https://nextjs.org), featuring a clean component architecture and organized codebase.
+
+## 📋 Project Structure (Recently Refactored!)
+
+The codebase has been refactored from a single 1000+ line component into a modular, maintainable architecture:
+
+```
+src/
+├── app/page.tsx                    # Main entry (32 lines)
+├── components/
+│   ├── sections/                   # Feature sections (11 components)
+│   └── ui/                         # Reusable UI components
+└── constants/                      # Data & configuration (5 files)
+```
+
+**Documentation**: See [REFACTORING_SUMMARY.md](REFACTORING_SUMMARY.md), [REFACTORING_GUIDE.md](REFACTORING_GUIDE.md), [ARCHITECTURE.md](ARCHITECTURE.md), and [QUICK_REFERENCE.md](QUICK_REFERENCE.md) for details.
 
 ## Getting Started
 
