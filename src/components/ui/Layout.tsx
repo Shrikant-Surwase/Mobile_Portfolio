@@ -1,3 +1,5 @@
+import { doto } from "@/app/fonts";
+import Link from "next/link";
 interface ContainerProps {
   children: React.ReactNode;
   className?: string;
@@ -27,7 +29,9 @@ interface SectionTitleProps {
 
 export const SectionTitle = ({ title, subtitle, bordered = true }: SectionTitleProps) => (
   <div className={bordered ? 'border-dashed border-t border-[#27272a] pt-2 mb-4' : ''}>
-    <h2 className="font-bold font-doto tracking-wider text-xl sm:text-[26px] leading-7 sm:leading-8 text-[#fafafa]">
+    <h2
+      className={`${doto.className} font-bold tracking-wider text-xl sm:text-[26px] leading-7 sm:leading-8 text-[#fafafa]`}
+    >
       {title}
       {subtitle && (
         <span className="text-xs sm:text-sm text-[#404040] font-normal font-jetbrains-mono tracking-wider block sm:inline mt-1 sm:mt-0">
@@ -70,14 +74,17 @@ export const Button = ({
 interface GlassCardProps {
   children: React.ReactNode;
   className?: string;
+  href?: string;
 }
 
-export const GlassCard = ({ children, className = '' }: GlassCardProps) => (
-  <div
-    className={`border border-[#27272a] rounded-lg p-4 sm:p-6 hover:bg-[#0e0e0e] hover:border-[#35353a] transition-colors ${className}`}
-  >
-    {children}
-  </div>
+export const GlassCard = ({ children, className = '', href }: GlassCardProps) => (
+  <Link href={href || '#'} target="_blank" >
+    <div
+      className={`border border-[#27272a] rounded-lg p-4 sm:p-6 hover:bg-[#0e0e0e] hover:border-[#35353a] transition-colors ${className} mt-6`}
+    >
+      {children}
+    </div>
+   </Link>
 );
 
 interface BadgeProps {

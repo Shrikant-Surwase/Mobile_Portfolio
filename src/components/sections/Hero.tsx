@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import dp from '../../../public/dp.jpeg';
 import { Section } from '@/components/ui/Layout';
+import { doto, frijole } from '@/app/fonts';
 
 export const Hero = () => {
   return (
@@ -24,10 +25,14 @@ export const Hero = () => {
           </a>
         </div>
         <div>
-          <h1 className="font-bold font-doto tracking-wider text-[22px] sm:text-[26px] leading-7 sm:leading-8 text-[#fafafa]">
+          <h1
+            className={`${frijole.className} font-bold tracking-wider text-[22px] sm:text-[26px] leading-7 sm:leading-8 text-[#fafafa]`}
+          >
             Shrikant Survase
           </h1>
-          <p className="mt-1 text-xs sm:text-sm text-[#8ab4f8] text-left font-normal tracking-wider">
+          <p
+            className={`${doto.className} mt-1 text-xs sm:text-sm text-[#8ab4f8] text-left font-normal tracking-wider`}
+          >
             React Native Developer • SDE 1 at Greytip Software
           </p>
         </div>
